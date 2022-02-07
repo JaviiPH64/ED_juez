@@ -1,3 +1,5 @@
+// Clase Horas 1.0
+
 #ifndef HORAS
 #define HORAS
 
@@ -17,17 +19,17 @@ public:
 
 	Horas(int h, int m, int s) : horas(h), minutos(m), segundos(s) {
 		if (h > MAX_H || h < MIN_HMS) {
-			throw std::invalid_argument("Hora no válida");
+			throw std::invalid_argument("Hora no vÃ¡lida");
 		}
 		if (m > MAX_MS || m < MIN_HMS) {
-			throw std::invalid_argument("Minutos no válidos");
+			throw std::invalid_argument("Minutos no vÃ¡lidos");
 		}
 		if (s > MAX_MS || s < MIN_HMS) {
-			throw std::invalid_argument("Segundos no válidos");
+			throw std::invalid_argument("Segundos no vÃ¡lidos");
 		}
 	}
 
-	// operador de asignación
+	// operador de asignaciÃ³n
 	int get_horas() const {
 		return horas;
 	}
@@ -40,7 +42,7 @@ public:
 		return segundos;
 	}
 
-	// operadores de comparación
+	// operadores de comparaciÃ³n
 
 	bool operator< (Horas const& h) const {
 		if (horas < h.horas) {
